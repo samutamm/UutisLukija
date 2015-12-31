@@ -3,11 +3,11 @@ script:
   - mvn install
   - mvn compile
 before_install:
-  - git clone git@github.com:samutamm/PaivanUutiset.git
+  - git clone https://github.com/samutamm/PaivanUutiset.git
   - cd PaivanUutiset
   - mvn install
   - cd ..
-  - git clone git@github.com:samutamm/HackerNewsUutiset.git
+  - git clone https://github.com/samutamm/HackerNewsUutiset.git
   - cd HackerNewsUutiset
   - mvn install
   - cd ..
