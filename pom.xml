@@ -10,7 +10,20 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-    
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.eluder.coveralls</groupId>
+          <artifactId>coveralls-maven-plugin</artifactId>
+          <version>4.1.0</version>
+          <configuration>
+              <repoToken>${env.COVERALLS}</repoToken>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>com.mycompany</groupId>
@@ -22,5 +35,6 @@
             <artifactId>gson</artifactId>
             <version>2.2.4</version>
         </dependency>
+
     </dependencies>
 </project>

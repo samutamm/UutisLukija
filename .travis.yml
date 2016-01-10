@@ -1,13 +1,16 @@
 language: java
 script:
-  - mvn install
-  - mvn compile
+- mvn install
+- mvn compile
 before_install:
-  - git clone https://github.com/samutamm/PaivanUutiset.git
-  - cd PaivanUutiset
-  - mvn install
-  - cd ..
-  - git clone https://github.com/samutamm/HackerNewsUutiset.git
-  - cd HackerNewsUutiset
-  - mvn install
-  - cd ..
+- git clone https://github.com/samutamm/PaivanUutiset.git
+- cd PaivanUutiset
+- mvn install
+- cd ..
+- git clone https://github.com/samutamm/HackerNewsUutiset.git
+- cd HackerNewsUutiset
+- mvn install
+- cd ..
+env:
+  global:
+    secure: RLopfwrf6TN90ZnQhDFhgWwU+iJ++B0ktxjDwByBl91zAJeUuavzvVU4sjst/BkGS1b6/PUmHBWbYgKQttIJT8bTetWdsLnHbQaMtR+HWF7HhiyxwyKhWuUT66URrsN04QK2xtbHYavfTF5RhbUzDi2T5R3ViYBk0zK9SjNy9VaZeJGMTU7xPgwE0xgwve2TCTaoYj5aeoMItaUgiF8HDNonz+TlOAqfcEngsZlh/KKKn4StfK3eqLLhV/KkZ/FJExpYsCXEk77+TZc7pHfqVDNnGP/O4DK5q1GwDqn0szhQxM1KTqhxp0c4Voe+CPDxUrqOq3MDfrp2D8JxeC2KHA4Hpko+o0fQ/yDPlPVEy0sOygPARmOZ4Z9Z7gd8wv6av8oK841c3DyRi6BKn4TxRuuY3mU6Lft3F08MwheUIlUbNiZc6eVn3kcSmxmeIH8Ft+9Cib9OyzgshV5vhI8s3wfAmOo5rUCOb8uO/DGi+Yfm5SFIaNteNjXUS2dPxKAN7DYmoeCXP4glqiH7xXgPhEt2kBN6w2kIjkCODPycfItcSgkVzZu4OKWnYRNCb/zAT68Ri6pJHAWVHAP8bb4U0buWuyXuDvu80QWWtPJIxLV8O27EoGhf1AwloAe5/AmbpnLEhxBi2gOg2qmfwIj5dRsDxtt/OrWCVlyNw57chb4=
